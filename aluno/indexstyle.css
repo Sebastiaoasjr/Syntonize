@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/Righteous-Regular.ttf");
+}
+* {
+	font-family: 'Righteous', sans-serif;
+}
+body {
+    background-color: #242543;
+    text-align: center;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+#usuariolink {
+    color: #FFF;
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 170px;
+}
+#Titulo {
+    padding-right: 170px;
+}

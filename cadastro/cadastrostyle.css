@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/Righteous-Regular.ttf");
+}
+* {
+	font-family: 'Righteous', sans-serif;
+}
+body {
+    background-color: #242543;
+    text-align: center;
+}
+.Volte {
+    margin-right: 445px;
+    margin-top: 36px;
+}
+#seta {
+    background: url("../img/Frame.png");
+    background-color: #242543;
+    color: #fff;
+    max-width: 100%;
+    border: none;
+    width: 19px;
+    height: 17px;
+}
+#voltar {
+    padding: 10px;
+}
+h1 {
+    margin-top: 90px;
+    color: #B67B99;
+    font-size: 32px;
+    letter-spacing: 2.3px;
+    margin-bottom: 37px;
+}
+p {
+    color: #CFCFCF;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+label {
+    color: #cfcfcfd3;
+    font-size: 12px;
+    letter-spacing: 1.8px;
+}
+#email {
+    margin-right: 208px;
+}
+#senha {
+    margin-right: 210px;
+}
+.jonas {
+    color: #4F4F4F;
+    background-color: #FFFFFFB2;
+    border-radius: 10px;
+    height: 25px;
+    width: 252px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+    max-width: 100%;
+}
+.btn {
+    max-width: 100%;
+    background-color: #B67B99;
+    color: #242543;
+    margin-bottom: 15px;
+    width: 260px;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 5px #a15e81;
+    border-color: #b67b9d34;
+    margin-bottom: 12px;
+}
+.btn:hover {
+    background-color: #a15e81;
+    box-shadow: 0px 5px #B67B99;
+    transition: 0.25s;
+    color: #222020;
+}
+.perfil {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#Aluno {
+    font-size: 15px;
+    margin-right: 32px;
+}
+#Professor {
+    font-size: 15px;
+}   

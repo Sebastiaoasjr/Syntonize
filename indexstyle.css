@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Righteous";
+    src: url("./fonts/Righteous-Regular.ttf");
+}
+* {
+	font-family: 'Righteous', sans-serif;
+    background-color: #242543;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 230px;
+}
+h1 {
+    color: #B67B99;
+    font-size: 33px;
+    line-height: 37.25px;
+    letter-spacing: 2.3px;
+    border: 0%;
+    margin-top: 85px;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+p#Paragrafo {
+    color: #525D70;
+    font-size: 13.5px;
+    border: 0%;
+    margin-top: 1px;
+    margin-bottom: 50px;
+    letter-spacing: 1.2px;
+}
+main {
+    padding-top:30px;
+}
+.b1 {
+    max-width: 100%;
+    background-color: #B67B99;
+    color: #242543;
+    margin-bottom: 15px;
+    width: 260px;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 5px #a15e81;
+    border-color: #b67b9d34;
+    margin-bottom: 13.5px;
+}
+.b2 {
+    max-width: 100%;
+    background-color: #33335277;
+    color: #B67B99;
+    width: 260px;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 16px;
+    border-color: #b67b9d34;
+    box-shadow: 0px 5px #7f7f97a2;
+}
+.b1:hover {
+    background-color: #a15e81;
+    box-shadow: 0px 5px #B67B99;
+    transition: 0.25s;
+    color: #222020;
+}
+.b2:hover {
+    background-color: #4c4cb3a2;
+    box-shadow: 0px 5px #33335277;
+    transition: 0.25s;
+    color: #da88c6;
+}
