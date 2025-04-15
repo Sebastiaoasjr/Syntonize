@@ -7,14 +7,16 @@ if (!isset($_POST['name'])) {
     exit;
 }
 
+$id = $_POST['id'];
 $name = $_POST['name'];
 
 try {
-    $stmt = $pdo->prepare("INSERT INTO users (name) VALUES (:name)");
+    $stmt = $pdo->prepare("UPDATE users SET name = :name WHERE id = :id");
+    $stmt->bindParam(':id', $id);
     $stmt->bindParam(':name', $name);
     
     if ($stmt->execute()) {
-        echo "<script>alert('Nome salvo com sucesso!'); window.location.href = '../index.php';</script>";
+        echo "<script>alert('Nome salvo com sucesso!'); window.location.href = './apresentacao3.php';</script>";
     } else {
         echo "<script>alert('Erro ao cadastrar. Tente novamente.'); window.location.href = './apresentacao2.php';</script>";
     }

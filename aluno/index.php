@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    require '../BD/config.php';
+    if (!isset($_SESSION['usuario'])) {
+        header("Location: ../login/index.php");
+        exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,9 +29,9 @@
     <footer>
         <nav>
             <a href="index.php" class="fas fa-home"></a>
-            <a href="index.php" class="fa-solid fa-ranking-star"></a>
+            <a href="index.php" class="fas fa-podium"></a>
             <a href="index.php" class="fas fa-home"></a>
-            <a href="index.php" class="fas fa-user"></a>
+            <a href="index.php" class="fas fa-comments-o"></a>
             <a href="index.php" class="fas fa-cog"></a>
         </nav>
     </footer>

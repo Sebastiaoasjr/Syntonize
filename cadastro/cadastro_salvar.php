@@ -1,6 +1,7 @@
 <?php
 
 require '../BD/config.php';
+session_start();
 
 if  (!isset($_POST['email']) || !isset($_POST['password']) || !isset($_POST['profile'])) {
     echo "<script>alert('Preencha todos os campos!'); window.location.href = 'cadastro.php';</script>"; 
@@ -18,6 +19,13 @@ try {
     $stmt->bindParam(':profile', $profile);
     
     if ($stmt->execute()) {
+
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+        $stmt->execute([$email]);
+
+        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['usuario'] = $usuario;
+
         echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href = '../apresentacao/index.php';</script>";
     } else {
         echo "<script>alert('Erro ao cadastrar. Tente novamente.'); window.location.href = './cadastro.php';</script>";
